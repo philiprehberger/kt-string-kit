@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.philiprehberger"
-version = project.findProperty("version") as String? ?: "0.1.0"
+version = project.findProperty("version") as String? ?: "0.2.0"
 
 repositories {
     mavenCentral()
@@ -35,7 +35,7 @@ publishing {
             from(components["java"])
             pom {
                 name.set("string-kit")
-                description.set("String manipulation: truncation, case conversion, wrapping, and interpolation")
+                description.set("String manipulation: truncation, case conversion, masking, wrapping, and interpolation")
                 url.set("https://github.com/philiprehberger/kt-string-kit")
                 licenses { license { name.set("MIT License"); url.set("https://opensource.org/licenses/MIT") } }
                 developers { developer { id.set("philiprehberger"); name.set("Philip Rehberger") } }
