@@ -13,7 +13,7 @@ class StringUtilsTest {
     @Test fun `mask with custom char`() = assertEquals("######", "secret".mask(char = '#'))
     @Test fun `mask middle range`() = assertEquals("4111********1111", "4111111111111111".mask(4, 12))
     @Test fun `mask partial`() = assertEquals("u***@example.com", "user@example.com".mask(1, 4))
-    @Test fun `mask from start`() = assertEquals("****World", "HelloWorld".mask(end = 4))
+    @Test fun `mask from start`() = assertEquals("*****World", "HelloWorld".mask(end = 5))
     @Test fun `mask empty string`() = assertEquals("", "".mask())
     @Test fun `mask start equals end`() = assertEquals("hello", "hello".mask(2, 2))
     @Test fun `mask out of range coerced`() = assertEquals("he***", "hello".mask(2, 100))
