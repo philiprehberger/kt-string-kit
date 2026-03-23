@@ -1,6 +1,6 @@
 # string-kit
 
-[![CI](https://github.com/philiprehberger/kt-string-kit/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/kt-string-kit/actions/workflows/publish.yml)
+[![Tests](https://github.com/philiprehberger/kt-string-kit/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/kt-string-kit/actions/workflows/publish.yml)
 [![Maven Central](https://img.shields.io/maven-central/v/com.philiprehberger/string-kit)](https://central.sonatype.com/artifact/com.philiprehberger/string-kit)
 [![License](https://img.shields.io/github/license/philiprehberger/kt-string-kit)](LICENSE)
 
@@ -11,9 +11,7 @@ String manipulation: truncation, case conversion, wrapping, and interpolation.
 ### Gradle (Kotlin DSL)
 
 ```kotlin
-dependencies {
-    implementation("com.philiprehberger:string-kit:0.1.2")
-}
+implementation("com.philiprehberger:string-kit:0.1.3")
 ```
 
 ### Maven
@@ -22,7 +20,7 @@ dependencies {
 <dependency>
     <groupId>com.philiprehberger</groupId>
     <artifactId>string-kit</artifactId>
-    <version>0.1.2</version>
+    <version>0.1.3</version>
 </dependency>
 ```
 
