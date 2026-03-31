@@ -1,9 +1,8 @@
 # string-kit
 
 [![Tests](https://github.com/philiprehberger/kt-string-kit/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/kt-string-kit/actions/workflows/publish.yml)
-[![Maven Central](https://img.shields.io/maven-central/v/com.philiprehberger/string-kit)](https://central.sonatype.com/artifact/com.philiprehberger/string-kit)
-[![License](https://img.shields.io/github/license/philiprehberger/kt-string-kit)](LICENSE)
-[![Sponsor](https://img.shields.io/badge/sponsor-GitHub%20Sponsors-ec6cb9)](https://github.com/sponsors/philiprehberger)
+[![Maven Central](https://img.shields.io/maven-central/v/com.philiprehberger/string-kit.svg)](https://central.sonatype.com/artifact/com.philiprehberger/string-kit)
+[![Last updated](https://img.shields.io/github/last-commit/philiprehberger/kt-string-kit)](https://github.com/philiprehberger/kt-string-kit/commits/main)
 
 String manipulation: truncation, case conversion, wrapping, and interpolation.
 
@@ -71,6 +70,24 @@ import com.philiprehberger.stringkit.*
 ./gradlew build      # Build JAR
 ```
 
+## Support
+
+If you find this project useful:
+
+⭐ [Star the repo](https://github.com/philiprehberger/kt-string-kit)
+
+🐛 [Report issues](https://github.com/philiprehberger/kt-string-kit/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
+
+💡 [Suggest features](https://github.com/philiprehberger/kt-string-kit/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement)
+
+❤️ [Sponsor development](https://github.com/sponsors/philiprehberger)
+
+🌐 [All Open Source Projects](https://philiprehberger.com/open-source-packages)
+
+💻 [GitHub Profile](https://github.com/philiprehberger)
+
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/philiprehberger)
+
 ## License
 
-MIT
+[MIT](LICENSE)
