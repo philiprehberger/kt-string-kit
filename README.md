@@ -4,14 +4,14 @@
 [![Maven Central](https://img.shields.io/maven-central/v/com.philiprehberger/string-kit.svg)](https://central.sonatype.com/artifact/com.philiprehberger/string-kit)
 [![Last updated](https://img.shields.io/github/last-commit/philiprehberger/kt-string-kit)](https://github.com/philiprehberger/kt-string-kit/commits/main)
 
-String manipulation: truncation, case conversion, wrapping, and interpolation.
+String manipulation: truncation, case conversion, masking, wrapping, and interpolation.
 
 ## Installation
 
 ### Gradle (Kotlin DSL)
 
 ```kotlin
-implementation("com.philiprehberger:string-kit:0.1.3")
+implementation("com.philiprehberger:string-kit:0.2.0")
 ```
 
 ### Maven
@@ -20,7 +20,7 @@ implementation("com.philiprehberger:string-kit:0.1.3")
 <dependency>
     <groupId>com.philiprehberger</groupId>
     <artifactId>string-kit</artifactId>
-    <version>0.1.3</version>
+    <version>0.2.0</version>
 </dependency>
 ```
 
@@ -38,6 +38,11 @@ import com.philiprehberger.stringkit.*
 "helloWorld".toSnakeCase()     // "hello_world"
 "helloWorld".toKebabCase()     // "hello-world"
 "hello_world".toPascalCase()   // "HelloWorld"
+
+// Masking
+"4111111111111111".mask(4, 12)   // "4111********1111"
+"user@example.com".mask(1, 4)    // "u***@example.com"
+"secret".mask()                  // "******"
 
 // Utilities
 "  lots  of   spaces ".collapseWhitespace() // "lots of spaces"
@@ -57,6 +62,7 @@ import com.philiprehberger.stringkit.*
 | `String.toPascalCase()` | Convert to PascalCase |
 | `String.toTitleCase()` | Convert to Title Case |
 | `String.toConstantCase()` | Convert to CONSTANT_CASE |
+| `String.mask(start, end, char)` | Mask characters in a range |
 | `String.collapseWhitespace()` | Collapse whitespace and trim |
 | `String.initials()` | Extract uppercase initials |
 | `String.surround(wrapper)` | Wrap string with prefix/suffix |
